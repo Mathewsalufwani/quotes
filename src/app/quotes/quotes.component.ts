@@ -13,6 +13,7 @@ export class QuotesComponent implements OnInit {
   quotes:Quote[] = [
     new Quote('“Do I not destroy my enemies when I make them my friends?”', 0, 0, 'Abraham Lincoln', 'John McGraw'),
     new Quote('"Nothing in life is promised except death."', 0, 0, 'Kanye West', 'David Boseman'),
+    new Quote('"No human is limited."', 0, 0, 'Eliud Kipchoge', 'Joseph Kamau'),
   ];
 
   toggleDetails(index){
