@@ -9,8 +9,13 @@ import { Quote } from '../quote'
 export class QuotesComponent implements OnInit {
 
   quotes:Quote[] = [
-    {quote:'"Find an online version and watch merlin find his son"', upvote:0, downvote:0, description:'djdfdkf'}
+    new Quote('Watch finding Nemo', 0, 0, 'Find an online version and watch merlin find his son'),
+    new Quote('Buy Cookies', 0, 0, 'I have to buy cookies for the parrot'),
   ];
+
+  toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
 
   constructor() { }
 
