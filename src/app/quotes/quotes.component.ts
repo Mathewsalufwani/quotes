@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Quote } from '../quote'
 
 @Component({
@@ -8,6 +8,8 @@ import { Quote } from '../quote'
 })
 export class QuotesComponent implements OnInit {
 
+
+
   quotes:Quote[] = [
     new Quote('Watch finding Nemo', 0, 0, 'Find an online version and watch merlin find his son'),
     new Quote('Buy Cookies', 0, 0, 'I have to buy cookies for the parrot'),
@@ -15,6 +17,16 @@ export class QuotesComponent implements OnInit {
 
   toggleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+
+  deleteQuote(isComplete, index){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].quote}?`)
+
+      if (toDelete){
+        this.quotes.splice(index,1)
+      }
+    }
   }
 
   constructor() { }
