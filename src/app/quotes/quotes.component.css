@@ -1,6 +1,5 @@
 h3{
   text-align: center;
-  padding-bottom: 1.5%;
 }
 
 button{
@@ -12,3 +11,12 @@ button{
 br{
   padding: 0em;
 }
+
+h5{
+  text-align: center;
+  padding-bottom: 1.5%;
+ }
+
+ .container{
+   padding-bottom: 2%;
+ }

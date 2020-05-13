@@ -11,8 +11,8 @@ export class QuotesComponent implements OnInit {
 
 
   quotes:Quote[] = [
-    new Quote('Watch finding Nemo', 0, 0, 'Find an online version and watch merlin find his son'),
-    new Quote('Buy Cookies', 0, 0, 'I have to buy cookies for the parrot'),
+    new Quote('“Do I not destroy my enemies when I make them my friends?”', 0, 0, 'Abraham Lincoln', 'John McGraw'),
+    new Quote('"Nothing in life is promised except death."', 0, 0, 'Kanye West', 'David Boseman'),
   ];
 
   toggleDetails(index){
@@ -21,7 +21,7 @@ export class QuotesComponent implements OnInit {
 
   deleteQuote(isComplete, index){
     if (isComplete) {
-      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].quote}?`)
+      let toDelete = confirm(`Are you sure you want to delete the following quote: ${this.quotes[index].quote}?`)
 
       if (toDelete){
         this.quotes.splice(index,1)
