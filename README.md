@@ -1,3 +1,5 @@
+[![codebeat badge](https://codebeat.co/badges/1862f588-56ac-4fb3-bc05-12be417ecda0)](https://codebeat.co/projects/github-com-mathewsalufwani-quotes-master)
+
 # Quotes4Real
 
 #### This is a website where the user can read quotes and also post their own quotes.
