@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
 import { Quote } from '../quote'
 
 @Component({
@@ -7,6 +7,8 @@ import { Quote } from '../quote'
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
+
+  
 
 
 
@@ -34,6 +36,10 @@ export class QuotesComponent implements OnInit {
     quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
   }
+
+  
+
+  
 
   constructor() { }
 

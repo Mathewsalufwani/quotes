@@ -7,6 +7,8 @@ h6{
 }
 
 .jumbotron{
-  background-color: #001a33;
+  
+  background-image: url("../assets/bg6.jpg");
+  background-repeat: no-repeat;
   color: white;
 }
