@@ -24,4 +24,9 @@ h5{
 
  .container{
    padding-bottom: 2%;
+   padding-top: 2%;
+   background-color: #595959;
+ }
+ body{
+  background-color: #595959;
  }
