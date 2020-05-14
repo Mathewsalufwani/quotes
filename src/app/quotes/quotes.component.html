@@ -4,6 +4,8 @@
       <div *ngFor='let quote of quotes;let i = index'>
         <h3>{{quote.quote}}</h3>
         <h5><i>{{quote.description}}</i></h5>
+        <button class="ll" ><img height="15" width="16" src="assets/like.png"> {{quote.upvote}}</button>
+        <button  class="ll"><img height="15" width="16" src="assets/dislike.png"> {{quote.upvote}}</button>
         <button class="btn btn-primary" (click)='toggleDetails(i)'>More Details</button>
         <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
         <hr>
